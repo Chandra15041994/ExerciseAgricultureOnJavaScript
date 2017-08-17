@@ -2,11 +2,11 @@ var fs=require('fs')
 var result = [];
 var res = [];
 var re = [];
-fs.readFile('Agriculture.csv','UTF-8',function(err,usedData)
+fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 {
-  const writeFileOil = fs.createWriteStream('OilSeeds.json');
-  const writeFileProd = fs.createWriteStream('Production.json');
-  const writeFileFood = fs.createWriteStream('FoodGrains.json');
+  const writeFileOil = fs.createWriteStream('../json/OilSeeds.json');
+  const writeFileProd = fs.createWriteStream('../json/Production.json');
+  const writeFileFood = fs.createWriteStream('../json/FoodGrains.json');
   var arr=usedData
   .split('\n')
   .map((usedData)=>{
