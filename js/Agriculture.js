@@ -15,20 +15,16 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 
   for(var i=1;i<arr.length;i++)
   {   
-
    if(arr[i][0].match("Oilseeds")=="Oilseeds")
-   {
-    
+   {  
     oil=arr[i][24];
     var argument =new Object;
     argument.value = oil
     result.push(argument)
     var invalidEntries = 0;
-
     function isNumber(obj) {
       return obj!== undefined && typeof(obj) === 'string' && !isNaN(obj);
     }
-
     function filterByid(argument) {
       if (isNumber(argument.value)) {
         return true;
@@ -41,25 +37,16 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
       return b.value-a.value;
     })
   }
-} 
-writeFileOil.write(JSON.stringify(x, null, 2), 'UTF8');
-
-
-for(var k=1;k<arr.length;k++)
-{   
-
- if(arr[k][0].match("Production")=="Production")
+  if(arr[i][0].match("Production")=="Production")
  {
-  prod =arr[k][24];
+  prod =arr[i][24];
   var arg =new Object;
   arg.value = prod
   res.push(arg)
   var invalidEntrie = 0;
-
   function isNumber(obj) {
     return obj!== undefined && typeof(obj) === 'string' && !isNaN(obj);
   }
-
   function filterId(arg) {
     if (isNumber(arg.value)) {
       return true;
@@ -72,16 +59,10 @@ for(var k=1;k<arr.length;k++)
     return b.value-a.value;
   })
 }
-} 
-writeFileProd.write(JSON.stringify(y, null, 2), 'UTF8');
 
-
-for(var l=1;l<arr.length;l++)
-{   
-
- if(arr[l][0].match("Foodgrains")=="Foodgrains")
+if(arr[i][0].match("Foodgrains")=="Foodgrains")
  {
-  food =arr[l][24];
+  food =arr[i][24];
   var args =new Object;
   args.value = food
   re.push(args)
@@ -104,6 +85,8 @@ for(var l=1;l<arr.length;l++)
   })
 }
 } 
+writeFileOil.write(JSON.stringify(x, null, 2), 'UTF8');
+writeFileProd.write(JSON.stringify(y, null, 2), 'UTF8');
 writeFileFood.write(JSON.stringify(z, null, 2), 'UTF8');
 })
 
