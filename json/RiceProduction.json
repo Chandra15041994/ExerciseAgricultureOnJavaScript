@@ -1,185 +1,246 @@
 [
   {
+    "name": "Agricultural Production Foodgrains Rice Volume West Bengal",
     "value": "14960"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Uttar Pradesh",
     "value": "14410"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Punjab",
     "value": "11370"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
     "value": "10910"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Orissa",
     "value": "7640"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Bihar",
     "value": "7340"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Chhattisgarh",
     "value": "6610"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Assam",
     "value": "4560"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
     "value": "4400"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Punjab",
     "value": "3989"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Haryana",
     "value": "3980"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
     "value": "3280"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Haryana",
     "value": "3262"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
     "value": "3126"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Maharashtra",
     "value": "3040"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Jharkhand",
     "value": "3030"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
     "value": "2785"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Madhya Pradesh",
     "value": "2780"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield West Bengal",
     "value": "2755"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
     "value": "2650"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
     "value": "2583"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield",
     "value": "2462"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Uttar Pradesh",
     "value": "2459"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Bihar",
     "value": "2258"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Jharkland",
     "value": "2244"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Gujarat",
     "value": "2143"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Assam",
     "value": "2036"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Maharashtra",
     "value": "1961"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Orissa",
     "value": "1896"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Chhattisgarh",
     "value": "1749"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Gujarat",
     "value": "1500"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Yield Madhya Pradesh",
     "value": "1479"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Uttaranchal",
     "value": "581"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Jammu and Kashmir",
     "value": "545.6"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
     "value": "530"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Rajasthan",
     "value": "222.5"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume Himachal Pradesh",
     "value": "134.3"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice",
     "value": "105.24"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Volume",
     "value": "104.4"
   },
   {
+    "name": "Agricultural Production Major Crops Achievements Rice",
     "value": "104.4"
   },
   {
+    "name": "Agricultural Production Major Crops Target Rice",
     "value": "104"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Kharif",
     "value": "92.37"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area",
     "value": "42.8"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Rabi",
     "value": "12.87"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Uttar Pradesh",
     "value": "5.86"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area West Bengal",
     "value": "5.43"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Orissa",
     "value": "4.03"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Chhattisgarh",
     "value": "3.78"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
     "value": "3.49"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Bihar",
     "value": "3.25"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Punjab",
     "value": "2.85"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Assam",
     "value": "2.24"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Madhya Pradesh",
     "value": "1.88"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Others",
     "value": "1.73"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
     "value": "1.58"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Maharashtra",
     "value": "1.55"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Jharkland",
     "value": "1.35"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
     "value": "1.27"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Haryana",
     "value": "1.22"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Gujarat",
     "value": "0.7"
   },
   {
+    "name": "Agricultural Production Foodgrains Rice Area Kerala",
     "value": "0.2"
   }
 ]
