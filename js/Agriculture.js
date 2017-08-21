@@ -5,7 +5,9 @@ var re = [];
 var riceResult = [];
 var commResult = [];
 var year = [];
-var commAggre = [];
+var commAggre =[];
+var id = 0; 
+ var ides = []
 fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 {
   const writeFileOil = fs.createWriteStream('../json/OilSeeds.json');
@@ -20,23 +22,18 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
   })
 
 
-  for(var i=1;i<arr.length;i++)
+  for(var i=1; i<arr.length; i++)
   { 
-
    if(arr[i][0].match("Oilseeds")=="Oilseeds")
    {  
-    oil=arr[i][23];
-    oil1= arr[i][0];
-    var argument =new Object;
-    argument.name=oil1
-    argument.value = oil
-    result.push(argument)
+    var oil = { "name" : arr[i][0], "value" : arr[i][23] } 
+    result.push(oil)
     var invalidEntries = 0;
     function isNumber(obj) {
-      return obj!== undefined&& typeof(obj) === 'string'  && !isNaN(obj);
+      return obj!== undefined && typeof(obj)=== 'string' && !isNaN(obj);
     }
-    function filterByid(argument) {
-      if (isNumber(argument.value)) {
+    function filterByid(oil) {
+      if (isNumber(oil.value)) {
         return true;
       } 
       invalidEntries++;
@@ -46,18 +43,11 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
     var x = arrByid.sort(function(a,b){
       return b.value-a.value;
     })
-   
-    
-
-
   }
   if(arr[i][0].match("Production")=="Production")
  {
-  prod =arr[i][23];
-  prodName = arr[i][0];
-  var arg =new Object;
-  arg.name = prodName
-  arg.value = prod
+  
+  var arg = {"name" : arr[i][0], "value" : arr[i][23]};
   res.push(arg)
   var invalidEntrie = 0;
   function isNumber(obj) {
@@ -78,11 +68,9 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 
 if(arr[i][0].match("Foodgrains")=="Foodgrains")
  {
-  food =arr[i][23];
-  foodName = arr[i][0]
-  var args =new Object;
-  args.name = foodName
-  args.value = food
+  
+  var args = {name : arr[i][0], value : arr[i][23]};
+  
   re.push(args)
   var invalidEntr = 0;
 
@@ -105,11 +93,9 @@ if(arr[i][0].match("Foodgrains")=="Foodgrains")
 
 if(arr[i][0].match("Rice")=="Rice")
    {  
-    rice =arr[i][23];
-    riceName = arr[i][0]
-    var item =new Object;
-    item.name = riceName
-    item.value = rice
+ 
+    var item ={"name" : arr[i][0], "value" : arr[i][23]};
+
     riceResult.push(item)
     var invalidEnt = 0;
     function isNumber(obj) {
@@ -130,18 +116,11 @@ if(arr[i][0].match("Rice")=="Rice")
 
 if(arr[i][0].match("Commercial")=="Commercial")
    { 
-   
-     j = 15;
-   
+    var j = 15;
     do
     {
-    commCrop = arr[i][j];
-    commCrop1 = arr[0][j];
-     year.push(commCrop1);
-    //console.log(year[9])
-    var itemComm =new Object;
-    itemComm.name = commCrop1;
-    itemComm.value = commCrop;
+     year.push(arr[0][j]);  
+    var itemComm = {"name" : arr[0][j], "value" : arr[i][j]};
     commResult.push(itemComm)
     var invalidVal = 0;
     function isNumber(obj) {
@@ -159,29 +138,32 @@ if(arr[i][0].match("Commercial")=="Commercial")
       return b.value-a.value;
     })
    
-    commAggre = commX.filter((event) => { return event.name == year[j] })
+    
+   if(year[j]!=undefined)  
+   {
+     commAggre = commX.filter((event) => { return event.name == year[j] })
    .map((itemComm)=>{return itemComm.value})
    .reduce((prev, value)=>{return prev + parseFloat(value)}, 0);
-      var commercialAggre = commAggre;
-      console.log(year[j], commAggre)
+   
+   var aggreCommercial = { "id ": id++, "year" : year[j], "value" : commAggre }
+  
+   writeFileCommCrop.write(JSON.stringify(aggreCommercial, null, 2), 'UTF8'); 
+ 
+   }
       j++;
-      
     }
     while(j<arr.length);
-      
+   
+    // 
   }
 
-
+//console.log(aggreCommercial)
 } 
-//console.log(year);
+
 writeFileOil.write(JSON.stringify(x, null, 2 ), 'UTF8');
 writeFileProd.write(JSON.stringify(y, null, 2), 'UTF8');
 writeFileFood.write(JSON.stringify(z, null, 2), 'UTF8');
 writeFileRice.write(JSON.stringify(riceX, null, 2), 'UTF8');
-writeFileCommCrop.write(JSON.stringify(commX, null, 1), 'UTF8');
 
-  //console.log(commercialAggre)
- 
-
-})
+}   )
  
