@@ -1,13 +1,15 @@
-var fs=require('fs')
-var result = [];
-var res = [];
-var re = [];
-var riceResult = [];
-var commResult = [];
-var year = [];
-var commAggre =[];
-var id = 0; 
- var ides = []
+let fs=require('fs')
+let result = [];
+let res = [];
+let re = [];
+let riceResult = [];
+let commResult = [];
+let year = [];
+let commAggre =[];
+let id = 0; 
+let invalidEntries = 0;
+let aggre = [];
+let array = [];
 fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 {
   const writeFileOil = fs.createWriteStream('../json/OilSeeds.json');
@@ -20,15 +22,12 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
   .map((usedData)=>{
     return usedData.split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
   })
-
-
   for(var i=1; i<arr.length; i++)
   { 
    if(arr[i][0].match("Oilseeds")=="Oilseeds")
    {  
-    var oil = { "name" : arr[i][0], "value" : arr[i][23] } 
-    result.push(oil)
-    var invalidEntries = 0;
+     let oil = { "name" : arr[i][0], "value" : arr[i][23] } 
+    result.push(oil)  
     function isNumber(obj) {
       return obj!== undefined && typeof(obj)=== 'string' && !isNaN(obj);
     }
@@ -46,10 +45,8 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
   }
   if(arr[i][0].match("Production")=="Production")
  {
-  
-  var arg = {"name" : arr[i][0], "value" : arr[i][23]};
-  res.push(arg)
-  var invalidEntrie = 0;
+  let arg = {"name" : arr[i][0], "value" : arr[i][23]};
+  res.push(arg) 
   function isNumber(obj) {
     return obj!== undefined && typeof(obj) === 'string' && !isNaN(obj);
   }
@@ -57,23 +54,18 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
     if (isNumber(arg.value)) {
       return true;
     } 
-    invalidEntrie++;
+    invalidEntries++;
     return false; 
   }
-  var arrId = res.filter(filterId);
-  var y = arrId.sort(function(a,b){
+  let arrId = res.filter(filterId);
+   y = arrId.sort(function(a,b){
     return b.value-a.value;
   })
 }
-
 if(arr[i][0].match("Foodgrains")=="Foodgrains")
  {
-  
-  var args = {name : arr[i][0], value : arr[i][23]};
-  
+  let args = {"name" : arr[i][0], "value" : arr[i][23]};
   re.push(args)
-  var invalidEntr = 0;
-
   function isNumber(obj) {
     return obj!== undefined && typeof(obj) === 'string' && !isNaN(obj);
   }
@@ -82,10 +74,10 @@ if(arr[i][0].match("Foodgrains")=="Foodgrains")
     if (isNumber(args.value)) {
       return true;
     } 
-    invalidEntr++;
+    invalidEntries++;
     return false; 
   }
-  var arrWithId = re.filter(filterWithId);
+  let arrWithId = re.filter(filterWithId);
   var z = arrWithId.sort(function(a,b){
     return b.value-a.value;
   })
@@ -94,10 +86,10 @@ if(arr[i][0].match("Foodgrains")=="Foodgrains")
 if(arr[i][0].match("Rice")=="Rice")
    {  
  
-    var item ={"name" : arr[i][0], "value" : arr[i][23]};
+    let item ={"name" : arr[i][0], "value" : arr[i][23]};
 
     riceResult.push(item)
-    var invalidEnt = 0;
+  
     function isNumber(obj) {
       return obj!== undefined && typeof(obj) === 'string' && !isNaN(obj);
     }
@@ -105,24 +97,23 @@ if(arr[i][0].match("Rice")=="Rice")
       if (isNumber(item.value)) {
         return true;
       } 
-      invalidEnt++;
+      invalidEntries++;
       return false; 
     }
-    var arrByidRice = riceResult.filter(filterByidRice);
-    var riceX = arrByidRice.sort(function(a,b){
+    let arrByidRice = riceResult.filter(filterByidRice);
+     riceX = arrByidRice.sort(function(a,b){
       return b.value-a.value;
     })
   }
-
 if(arr[i][0].match("Commercial")=="Commercial")
    { 
-    var j = 15;
+    let j = 15;
     do
     {
      year.push(arr[0][j]);  
-    var itemComm = {"name" : arr[0][j], "value" : arr[i][j]};
+    let itemComm = {"name" : arr[0][j], "value" : arr[i][j]};
     commResult.push(itemComm)
-    var invalidVal = 0;
+    
     function isNumber(obj) {
       return obj!== undefined && typeof(obj) == 'string' && !isNaN(obj);
     }
@@ -130,40 +121,38 @@ if(arr[i][0].match("Commercial")=="Commercial")
       if (isNumber(itemComm.value)) {
         return true;
       } 
-      invalidVal++;
+      invalidEntries++;
       return false; 
     }
-    var arrByidComm = commResult.filter(filterByidComm);
-    var commX = arrByidComm.sort(function(a,b){
+    let arrByidComm = commResult.filter(filterByidComm);
+     commX = arrByidComm.sort(function(a,b){
       return b.value-a.value;
     })
-   
-    
    if(year[j]!=undefined)  
    {
-     commAggre = commX.filter((event) => { return event.name == year[j] })
-   .map((itemComm)=>{return itemComm.value})
-   .reduce((prev, value)=>{return prev + parseFloat(value)}, 0);
-   
-   var aggreCommercial = { "id ": id++, "year" : year[j], "value" : commAggre }
-  
-   writeFileCommCrop.write(JSON.stringify(aggreCommercial, null, 2), 'UTF8'); 
- 
+     commAggre = commX.filter((event) => { return event.name == year[j] }).map((itemComm)=>{return itemComm.value}).reduce((prev, value)=>{return prev + parseFloat(value)}, 0);
+     let aggreCommercial = {"id ": id++, "year" : year[j], "value" : commAggre} 
+      //let aggregate = aggreCommercial.filter((event)=>{return (id>30)?event.value:false})
+       if(id>30)
+        {
+          array.push(aggreCommercial)
+          
+      }
+
+                
    }
       j++;
+
     }
-    while(j<arr.length);
-   
-    // 
+    while(j<arr.length); 
+
+
   }
-
-//console.log(aggreCommercial)
 } 
-
-writeFileOil.write(JSON.stringify(x, null, 2 ), 'UTF8');
+writeFileOil.write(JSON.stringify(x, null, 2), 'UTF8');
 writeFileProd.write(JSON.stringify(y, null, 2), 'UTF8');
 writeFileFood.write(JSON.stringify(z, null, 2), 'UTF8');
 writeFileRice.write(JSON.stringify(riceX, null, 2), 'UTF8');
-
-}   )
+writeFileCommCrop.write(JSON.stringify(array, null, 2), 'UTF8'); 
+} )
  
