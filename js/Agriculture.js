@@ -3,7 +3,7 @@ let result = [], res=[], re = [], riceResult=[], commResult=[], year = [], commA
 fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 {
   const writeFileOil = fs.createWriteStream('../json/OilSeeds.json');
-  const writeFileProd = fs.createWriteStream('../json/Production.json');
+  /*const writeFileProd = fs.createWriteStream('../json/Production.json');*/
   const writeFileFood = fs.createWriteStream('../json/FoodGrains.json');
   const writeFileRice = fs.createWriteStream('../json/RiceProduction.json');
   const writeFileCommCrop = fs.createWriteStream('../json/CommercialCrop.json');
@@ -17,13 +17,13 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
      let arrByid = result.filter((d)=>{if(isNaN(d.value)){ return false; } return true;});
      x = arrByid.sort((a,b)=>{return b.value-a.value})
    }
-   if(arr[i][0].match("Production")=="Production")
+  /* if(arr[i][0].match("Production")=="Production")
    {
     let arg = {"name" : arr[i][0], "value" : arr[i][23]};
     res.push(arg) 
     let arrId = res.filter((d)=>{if(isNaN(d.value)){ return false }return true });
     y = arrId.sort((a,b)=>{return b.value-a.value })
-  }
+  }*/
   if(arr[i][0].match("Foodgrains")=="Foodgrains")
   {
     let args = {"name" : arr[i][0], "value" : arr[i][23]};
@@ -71,7 +71,7 @@ while(j<arr.length);
 }
 } 
 writeFileOil.write(JSON.stringify(x, null, 2), 'UTF8');
-writeFileProd.write(JSON.stringify(y, null, 2), 'UTF8');
+/*writeFileProd.write(JSON.stringify(y, null, 2), 'UTF8');*/
 writeFileFood.write(JSON.stringify(z, null, 2), 'UTF8');
 writeFileRice.write(JSON.stringify(riceX, null, 2), 'UTF8');
 writeFileCommCrop.write(JSON.stringify(array, null, 2), 'UTF8'); 
