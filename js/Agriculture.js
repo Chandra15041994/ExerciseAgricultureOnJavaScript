@@ -38,7 +38,7 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
         yearRice.push(arr[0][k])
     if ((arr[i][0].match("Andhra Pradesh") == "Andhra Pradesh") ||(arr[i][0].match("Karnataka") == "Karnataka") ||
       (arr[i][0].match("Kerala") == "Kerala") ||  (arr[i][0].match("Tamil Nadu") == "Tamil Nadu")) {
-      let item ={"name" : arr[i][0], "value" : arr[i][k], "year" : yearRice[k] }
+      let item ={"name" : arr[i][0], "value" : arr[i][k], "year" : yearRice[k] } 
        riceResult.push(item)
        let arrByidRice = riceResult.filter((d)=>{ if(isNaN(d.value)){ return false } return true });
        riceX = arrByidRice.sort((a,b)=>{return b.value-a.value })
@@ -49,8 +49,8 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 if(arr[i][0].match("Commercial")=="Commercial")
 { 
   let j = 15;
-  do
-  {
+   do
+   {
    year.push(arr[0][j]);  
    let itemComm = {"name" : arr[0][j], "value" : arr[i][j]};
    commResult.push(itemComm)  
