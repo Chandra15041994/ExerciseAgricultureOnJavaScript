@@ -1,5 +1,5 @@
 let fs=require('fs')
-let result = [], res=[], re = [], riceResult=[], commResult=[], year = [], commAggre=[] , id =0, aggre = 0 , array=[];
+let result = [], res=[], re = [], riceResult=[], commResult=[], year = [], commAggre=[] , id =0, aggre = 0 ,yearRice=[], array=[];
 fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 {
   const writeFileOil = fs.createWriteStream('../json/OilSeeds.json');
@@ -33,13 +33,18 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
   }
   if(arr[i][0].match("Rice")=="Rice")
   {  
+    let k = 0;
+    do {
+        yearRice.push(arr[0][k])
     if ((arr[i][0].match("Andhra Pradesh") == "Andhra Pradesh") ||(arr[i][0].match("Karnataka") == "Karnataka") ||
       (arr[i][0].match("Kerala") == "Kerala") ||  (arr[i][0].match("Tamil Nadu") == "Tamil Nadu")) {
-      let item ={"name" : arr[i][0], "value" : arr[i][23]};
-    riceResult.push(item)
-    let arrByidRice = riceResult.filter((d)=>{ if(isNaN(d.value)){ return false } return true });
-    riceX = arrByidRice.sort((a,b)=>{return b.value-a.value })
+      let item ={"name" : arr[i][0], "value" : arr[i][k], "year" : yearRice[k] }
+       riceResult.push(item)
+       let arrByidRice = riceResult.filter((d)=>{ if(isNaN(d.value)){ return false } return true });
+       riceX = arrByidRice.sort((a,b)=>{return b.value-a.value })
   }
+  k++;
+  }while(k<25) 
 }
 if(arr[i][0].match("Commercial")=="Commercial")
 { 
