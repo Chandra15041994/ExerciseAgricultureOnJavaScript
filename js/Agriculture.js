@@ -1,7 +1,6 @@
 let fs=require('fs')
-let result = [], res=[], re = [], riceResult=[], commResult=[], year = [], commAggre=[] , id =0, aggre = 0 ,yearRice=[],riceXAggre=[], array=[],name=[],
-riceAggre=[],
-riceResult1=[], riceResult2=[], riceResult3=[], riceKaran=[], riceTamil=[], riceAndhra=[],riceKerala=[], riceId=0;
+let result = [], res=[], re = [], riceResult=[], commResult=[], year = [], commAggre=[] , id =0, aggre = 0 ,yearRice=[],riceXAggre=[], array=[],
+riceAggre=[],riceResult1=[], riceResult2=[], riceResult3=[], riceKaran=[], riceTamil=[], riceAndhra=[],riceKerala=[], riceId=0;
 fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
 {
   const writeFileOil = fs.createWriteStream('../json/OilSeeds.json');
@@ -39,7 +38,6 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
         riceA = arrByidComm.sort((a,b)=>{return b.value-a.value })
         riceAggre = riceA.filter((event) => { return event.name == yearRice[k] }).map((itemRice1)=>{return itemRice1.value}).reduce((prev, value)=>{return prev + parseFloat(value)}, 0);
         if(yearRice[k]!=undefined){
-          
           aggreRice = { "id": id++, "name" : yearRice[k], "value" : riceAggre}
           if(id>=130&&id<=139){
            riceKaran[k] = aggreRice.value;
@@ -104,7 +102,6 @@ fs.readFile('../csv/Agriculture.csv','UTF-8',function(err,usedData)
   }  
   k++;
 }while(k<arr.length);
-
 }
 if(arr[i][0].match("Commercial")=="Commercial")
 { 

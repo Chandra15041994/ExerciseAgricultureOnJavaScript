@@ -22,7 +22,9 @@
 	 stroke: #000;
 	 shape-rendering: crispEdges;
 	}
-
+  .category, svg {
+            font-size: 10px;
+        }
 	</style>
 </head>
 
@@ -32,7 +34,7 @@
 
 <script>
 // set the dimensions of the canvas
-var margin = {top:5, right: 20, bottom: 330, left: 300},
+var margin = {top:5, right: 20, bottom: 500, left: 150},
     width = 1000 - margin.left - margin.right,
     height = 1000 - margin.top - margin.bottom;
 
@@ -42,6 +44,7 @@ var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
 
 var y = d3.scale.linear().range([height, 0]);
 
+var color = d3.scale.category20();
 // define the axis
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -94,7 +97,7 @@ d3.json("../json/OilSeeds.json", function(error, data) {
       .attr("y", 5)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Frequency");
+      .text("Production");
 
 
   // Add bar chart
@@ -106,6 +109,27 @@ d3.json("../json/OilSeeds.json", function(error, data) {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.value); })
       .attr("height", function(d) { return height - y(d.value); });
+
+ var legend = svg.selectAll(".legend")
+            .data(xData.slice())
+            .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function (d, i) { return "translate(-20," + i * 20 + ")"; });
+            legend.append("rect")
+            .attr("x", width - 18)
+            .attr("width", 18)
+            .attr("height", 18);
+            legend.append("text")
+            .attr("x", width - 24)
+            .attr("y", 9)
+            .attr("dy", ".35em")
+            .style("text-anchor", "end")
+            .text(function (d) { return d; });
+            legend.select("rect")
+            .style("fill", function (d, i) {
+                return color(i);
+        });
+
 
 });
 
