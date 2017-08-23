@@ -1,602 +1,65 @@
 [
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "14418",
-    "year": " 3-2011"
+    "Year": " 3-2005",
+    "Karnataka": 6260.31,
+    "Kerala": 2968.39,
+    "AndhraPradesh": 12715.09,
+    "TamilNadu": 7767.07
   },
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "14241",
-    "year": " 3-2009"
+    "Year": " 3-2006",
+    "Karnataka": 9613.49,
+    "Kerala": 2914.1800000000003,
+    "AndhraPradesh": 14646.98,
+    "TamilNadu": 7768.05
   },
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "13324",
-    "year": " 3-2008"
+    "Year": " 3-2007",
+    "Karnataka": 5917.4,
+    "Kerala": 3021.26,
+    "AndhraPradesh": 14859.98,
+    "TamilNadu": 10035.53
   },
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "12900",
-    "year": " 3-2012"
+    "Year": " 3-2008",
+    "Karnataka": 6343.42,
+    "Kerala": 2838.73,
+    "AndhraPradesh": 16671.98,
+    "TamilNadu": 7858.99
   },
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "11872",
-    "year": " 3-2007"
+    "Year": " 3-2009",
+    "Karnataka": 6314.51,
+    "Kerala": 3109.53,
+    "AndhraPradesh": 17491.39,
+    "TamilNadu": 7867.63
   },
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "11704",
-    "year": " 3-2006"
+    "Year": " 3-2010",
+    "Karnataka": 6174.487,
+    "Kerala": 3155.534,
+    "AndhraPradesh": 13603.441,
+    "TamilNadu": 8737.0455
   },
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "10910",
-    "year": " 3-2013"
+    "Year": " 3-2011",
+    "Karnataka": 6910.54,
+    "Kerala": 2999.213,
+    "AndhraPradesh": 17458.751,
+    "TamilNadu": 8824.906
   },
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "10538",
-    "year": " 3-2010"
+    "Year": " 3-2012",
+    "Karnataka": 6750.42,
+    "Kerala": 3284.21,
+    "AndhraPradesh": 16050.1,
+    "TamilNadu": 11387.9
   },
   {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "9601",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Andhra Pradesh",
-    "value": "8953",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "7460",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "6610.6",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "5792",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "5744",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "5665.2",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "5220",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "5182.7",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "5062.2",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "5040.2",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "4400",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "4188",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "3960",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "3926",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "3868",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "3802",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "3717",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "3691",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "3547",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "3446",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "3423",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "3344",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "3280",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "3246",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Tamil Nadu",
-    "value": "3222.8",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "3146",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "3126",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "3111",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "3070",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "3062",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "3036",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "3031",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "3009",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "2984",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Andhra Pradesh",
-    "value": "2939",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "2817",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2789",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "2785",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2721",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2714",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2712",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "2703",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "2683",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2650",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2625",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2583",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2557",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Karnataka",
-    "value": "2550.3",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "2546",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2519",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2511",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2482",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2476",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2470",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2390",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Karnataka",
-    "value": "2375",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2310",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Tamil Nadu",
-    "value": "2308",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2301",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "2284",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Yield Kerala",
-    "value": "1983",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "667.1",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "631",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "629.9",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "598.3",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "590.3",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "570",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "570",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "530",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "528.5",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Volume Kerala",
-    "value": "523",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "4.751",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "4.39",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "4.1",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "3.98",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "3.98",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "3.98",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "3.49",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "3.441",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "3.09",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Andhra Pradesh",
-    "value": "2.98",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "2.05",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.93",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.93",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.906",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.9",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.87",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.8455",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.79",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.58",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.54",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.51",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.49",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.487",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.42",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.42",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.4",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Tamil Nadu",
-    "value": "1.4",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.31",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.27",
-    "year": " 3-2013"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Karnataka",
-    "value": "1.15",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.29",
-    "year": " 3-2004"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.29",
-    "year": " 3-2005"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.28",
-    "year": " 3-2006"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.26",
-    "year": " 3-2007"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.234",
-    "year": " 3-2010"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.23",
-    "year": " 3-2008"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.23",
-    "year": " 3-2009"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.213",
-    "year": " 3-2011"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.21",
-    "year": " 3-2012"
-  },
-  {
-    "name": "Agricultural Production Foodgrains Rice Area Kerala",
-    "value": "0.2",
-    "year": " 3-2013"
+    "Year": " 3-2013",
+    "Karnataka": 5864.27,
+    "Kerala": 3180.2,
+    "AndhraPradesh": 14039.49,
+    "TamilNadu": 7186.58
   }
 ]
